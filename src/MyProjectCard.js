@@ -1,4 +1,4 @@
-import { Container, Divider, Heading, Img, Text } from "@chakra-ui/react";
+import { Container, Divider, Heading, Img, Text,Box } from "@chakra-ui/react";
 import React from "react";
 import ProjectLinkButtons from "./ProjectLinkButtons";
 import ProjectStack from "./ProjectStack";
@@ -11,12 +11,13 @@ const MyProjectCard = ({
   techStack,
 }) => {
   return (
-    <Container
+    <Container className="project-card" data-aos="fade-up" data-aos-duration="1000"
       maxW={["full", "full", "full", "full", "70%"]}
       mt="100px"
       display={["block", "block", "block", "flex", "flex"]}
     >
       <Container
+    
         transform="rotate(45deg)"
         borderRadius={["2em", "3em"]}
         height={["240px", "320px"]}
@@ -35,15 +36,21 @@ const MyProjectCard = ({
           marginLeft="-15px"
           py={["30px", "50px"]}
         >
-          <Heading fontWeight="bold" size={["sm", "md"]}>
+          <Heading data-aos="fade-right" data-aos-duration="5000" className="project-title" fontFamily={"cursive"} fontWeight="bold" fontSize={["17px","19px","20px","20px", "20px"]}>
             {projectTitle}
           </Heading>
-          <Divider borderColor="#fa4a6f" my='10px' />
+          <Box display="hidden" visibility={["hidden","hidden","hidden",,"hidden","inherit"]} > 
+          <Divider borderColor="#fa4a6f" my={["5%","4%","4%","5%","2%"]} /></Box>
+         
 
           {" "}
           <Img
             src={images}
+            // width={"100px"}
+            // boxSize={"-moz-initial"}
             boxSize="border-box"
+            width={"90%"}
+            margin={"auto"} 
             _hover={[
               { transform: "scale(1.5)" },
               { transform: "scale(1.5)" },
@@ -57,6 +64,7 @@ const MyProjectCard = ({
       </Container>
 
       <Container
+     
         transform="rotate(45deg)"
         borderRadius={["2em", "3em"]}
         height={["200px", "280px"]}
@@ -75,17 +83,20 @@ const MyProjectCard = ({
           
         >
           {" "}
-          <Heading fontWeight="semibold" fontSize={["17px", "29px"]} margin="7px">
+          <Heading fontWeight="semibold" fontSize={["17px", "29px"]} margin="7px" data-aos="fade-down" data-aos-duration="5000">
             Summary
           </Heading>
           <Divider borderColor="#fa4a6f" w='100px' m='auto' />
-          <Text margin={["10px", "20px"]} fontSize={["15px","18px"]} h="100px">
+          <Text data-aos="fade-up" data-aos-duration="5000" 
+          className="project-description" margin={["2px","10px", "20px"]} 
+          fontSize={["14px","17px","17px","18px","18px"]} h="100px">
             {description}
           </Text>
         </Container>
       </Container>
 
       <Container
+  
         transform="rotate(45deg)"
         borderRadius={["2em", "3em"]}
         height={["150px", "250px"]}
@@ -104,14 +115,20 @@ const MyProjectCard = ({
           w={["150px", "250px"]}
           p="0px"
           paddingTop={[".1em", "2em"]}
+      
         >
           {" "}
           <Text
             fontWeight="semibold"
             w={["10em", "10em"]}
-            ml={["2.3em", "3em"]}
-            mb="6px"
-            fontSize={["10px", "17px"]}
+            ml={["4.5em", "3em"]}
+       
+            mb="-1px"
+            // mt={["10px","0px","0px","0px","0px"]}
+            fontSize={["8px", "17px"]}
+            textAlign={"center"}
+            justifyContent={"center"}
+            data-aos="fade-down" data-aos-duration="5000"
           >
             Tech Stack Used:
           </Text>

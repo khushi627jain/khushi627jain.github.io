@@ -15,20 +15,23 @@ export default class GithubCalendar extends Component {
   }
   render() {
     return (
-        <div className='satistics' id="satistics">
+        <div  id="statistics">
 
-        <h1 className='tagName'>SATISTICS</h1>
+        <h1 className='tagName' data-aos="fade-down" data-aos-duration="1000">Statistics</h1>
       <Container 
+      data-aos="fade-right" data-aos-duration="1000"
       maxW={['full','80%']} 
       bg='#fa4a6f'
-      my='60px'
+      mt='30px'
       color="#333"
       fontWeight={"600"}
+      fontSize={"3xl"}
 borderRadius='20px'
+className="react-activity-calendar"
       >
 <Heading>My GitHub Calendar</Heading>
       <Container
-      maxW='full' marginTop={"10px"} p="10px"
+      maxW='full' marginTop={"10px"} p="10px" 
       className={
         'calendar' + (this.props.className ? ' ' + this.props.className : '')
       }

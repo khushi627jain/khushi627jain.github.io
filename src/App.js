@@ -1,27 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-import { Navbar } from './navbar';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import { AboutAndProfile } from './about&profile';
-import { TechSkills } from './tech-skills';
-import styles from "./style.css"
+
+// import styles from "./style.css"
 import Projects from './project';
 import { Statistics } from './statistics';
 import GithubCalendar from './GitHubCalendar';
-import { color } from '@chakra-ui/react';
+
+import { Contact } from './contact';
+import Navbar from './navbar';
+import About from './about';
+import './style.css'; 
+import TechStackSkills from './TechSkillsStack';
 
 
 
 function App() {
   return (
-    <div className="App" 
-    // style={{backgroundColor:"black",color:"white"}}
-     >
-    <Navbar/>
+    <div className="App" >
+  <Navbar/>
     <AboutAndProfile/>
-    <TechSkills/>
+    <About/>
+ <TechStackSkills/>
    <Projects/> 
    <GithubCalendar name="khushi627jain"/>
    <Statistics/>
+   <Contact/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from 'react';
 
 const ProjectStack = ({techStack}) => {
     return (
-        <Box
+        <Box className="project-tech-stack"
           display="grid"
           w={['100px','150px']}
           m='auto'
@@ -29,7 +29,7 @@ const ProjectStack = ({techStack}) => {
                 p={['5px',"8px"]}
                 boxShadow="base"
               >
-                <Icon  boxSize={['20px',"30px"]}>{img}</Icon>
+                <Icon  data-aos="zoom-out" data-aos-duration="5000"  boxSize={['20px',"30px"]}>{img}</Icon>
               </Box>
             );
           })}

@@ -11,6 +11,7 @@ const ProjectLinkButtons = ({ livelink, github }) => {
 gap='5px'
 >
       <Button
+      className="project-deployed-link"
         as="a"
         target="_blank"
         bg="#fa4a6f"
@@ -19,11 +20,13 @@ gap='5px'
         size={['xs',"md"]}
         href={livelink}
         _hover={{boxShadow:'1px 1px 10px black'}}
+        data-aos="fade-right" data-aos-duration="5000"
       >
-        <FiExternalLink /> Live
+        <FiExternalLink     data-aos="fade-right" data-aos-duration="5000" /> Live
       </Button>
 <Divider orientation="vertical" />
       <Button
+      className="project-github-link"
         as="a"
         target="_blank"
         bg="blackAlpha.700"
@@ -31,9 +34,10 @@ gap='5px'
         m="auto"
         size={['xs',"md"]}
         href={github}
+        data-aos="fade-left" data-aos-duration="5000"
         _hover={{bg: "blackAlpha.900" , boxShadow:'1px 1px 10px  #fa4a6f' }}
       >
-        <SiGithub />
+        <SiGithub  data-aos="fade-left" data-aos-duration="5000" />
          Code
       </Button>
     </Flex>

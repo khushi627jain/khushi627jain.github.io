@@ -1,35 +1,208 @@
-import react,{Component} from "react"
-import {Box, Button,  Spacer, Text} from "@chakra-ui/react"
-import styles from "./style.css"
-import { animateScroll as scroll } from 'react-scroll';
-import { Link } from "react-scroll"
-export function Navbar(){
-    
+
+
+import React from "react";
+import {
+  Container,
+  Box,
+  Heading,
+  Link,Divider,
+  IconButton,
+  useDisclosure,
+  VStack,
+  Spacer,
+  Button,
+} from "@chakra-ui/react";
+import { Link as ScrollLink } from "react-scroll";
+import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
+
+const Navbar = () => {
+  const { getDisclosureProps, getButtonProps } = useDisclosure();
+
+  const buttonProps = getButtonProps();
+  const disclosureProps = getDisclosureProps();
+  const links = [
+    "Home",
+    "About",
+    "Skills",
+    "Projects",
+    "Statistics",
+    "Contacts",
+  ];
+    const classes=[
+    "nav-link home",
+    "nav-link about",
+    "nav-link skills",
+    "nav-link projects",
+    "nav-link-stat",
+    "nav-link contact",
+  ];
+  const toLink=[
+    "home","about","skills",
+    "projects","statistics","contact"
+  ]
+  
+  return (
+    <Container
+    id="nav-menu"
+      h="80px"
+      marginBottom="50px"
+      pos="fixed"
+      zIndex="2"
+      padding="20px"
+      maxW="100%"
       
-    return(
-        <div id="home">
-<header className="header" id="header">
-    <a href="#"  className="logo">Deepshikha </a>
-    <nav className="navbar">
-        <Link className="navbarA" activeclass="active" to="home" spy={"true"} smooth={"true"}>Home</Link>
-        <Link  className="navbarA" to="about" spy={"true"} smooth={"true"}>About</Link>
-        <Link className="navbarA" to="skills" spy={"true"} smooth={"true"}>Skills</Link>
-        <Link className="navbarA" to="Projects" spy={"true"} smooth={"true"}>Projects</Link>   
-        <Link className="navbarA" to="satistics" spy={"true"} smooth={"true"}>Satistics</Link>
-        <Link className="navbarA" to="Contacts" spy={"true"} smooth={"true"}>Contacts</Link>
-     
-    </nav>
-    {/* <div className="bx bx-moon" id="darkMode-icon" ></div> */}
-</header>
+      display="flex"
+      justifyContent="space-between"
+      bg="gray.800"
+      borderRadius="20px"
+      color="black"
+      shadow="base"
+    >
+      <Box
+        as={ScrollLink}
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-80}
+        color="#fa4a6f"
+        duration={400}
+      >
+        <Heading marginTop={0} fontFamily="cursive" 
+      
+         cursor="pointer" >
+         Deepshikha 
+        </Heading>
+      </Box>
+      <Spacer />
+      <Box
+        display={["none", "none", "none", "flex", "flex"]}
+        w="50%"
+        justifyContent="space-evenly"
+      >
+        {links.map((navlink, i) => {
+          return (
+            <Link
+              as={ScrollLink}
+              key={i}
+              to= {toLink[i]}
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={400}
+              p="5px"
+              m="auto"
+              className={classes[i]}
+              fontSize={["10px","17px","16px","18px"]}
+              color="#fa4a6f"
+              cursor="pointer"
+              // w="100px"
+              _hover={{ bg:"#fa4a6f",color:"#333", borderRadius: "10px" ,textDecoration:"underline" }}
+            >
+              {navlink}
+            </Link>
+          );
+        })}
+      </Box>  
+        <Link class="nav-link resume">
+        <Button
+          display={["none", "none", "none", "flex", "flex"]}
+          borderRadius=".8rem"
+          id="resume-button-1"
+          size={["md", "md"]}
+          margin="auto"
+          as={Link}
+          target="_blank"
+          bg="white"
+          color="#fa4a6f"
+          _hover={{ bg: "#fa4a6f", color: "black" }}
+          href="./Deepshikha_jain_Resume.pdf"
+          download={true}
+        
+        >
+          <DownloadIcon id="resume-link-1" marginRight="5px" />
+          Resume
+        </Button>
+      </Link>
+      <Box 
+        paddingRight={"10px"}
+        >
+        <IconButton
+          float="right"
+          variant="outline"
+          colorScheme="#fa4a6f"
+          color={"#fa4a6f"}
+        
+          {...buttonProps}
+          display={["flex", "flex", "flex", "none", "none"]}
+        >
+          <HamburgerIcon />
+        </IconButton>
+        <VStack
+          marginTop="40px"
+          {...disclosureProps}
+          bg="#fa4a6f"
+          padding="5px"
+          borderRadius="5px"
+          display={["flex", "flex", "flex", "none", "none"]}
+        >
+          {links.map((navlink, i) => {
+            return (
+              <Link
+                as={ScrollLink}
+                key={i}
+                {...buttonProps}
+                width="100%"
+                color="#333"
+                borderRadius="5px"
+                fontSize={["18px"]}
+                to= {toLink[i]}
+                spy={true}
+                mt="5px" mb="10px"
+                smooth={true}
+             
+                offset={-80}
+                duration={400}
+                cursor="pointer"
+              >
+                {navlink}
+              
+           
+                <Box w="100px" 
+                margin={"auto"} 
+                 borderTop={"2px solid black"}></Box>
+              </Link>
+            );
+          })}
+         <Button
+            margin="auto"
+            as={Link}
+            target="_blank"    
+            fontSize={"3xl"}
+            variant="outline"
+            color="#fa4a6f"
+            bg="white"
+            p="15px"
+            border="1px"
+            borderRadius="15px"
+            href="./Deepshikha_jain_Resume.pdf"
+            download={true} 
+          >
+            <DownloadIcon marginRight="5px" 
+             />
+            Resume
+          </Button>
+        </VStack>
+      </Box>
+    </Container>
+  );
+};
+
+export default Navbar;
+
+// remove all commentys
 
 
 
 
 
 
-
-
-
-</div>
-    )
-} 
