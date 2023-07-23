@@ -6,7 +6,8 @@ import MyProjectCard from "./MyProjectCard";
 import quikr from "./quikrbazaar.png";
 import famous from "./famousfootwear.png"
 import travel from "./travellious.png"
-
+import {DiMongodb} from "react-icons/di"
+import {FaNodeJs} from "react-icons/fa"
 
 const Projects = () => {
   const projects = [
@@ -28,13 +29,15 @@ const Projects = () => {
     },
     {
       id: 2,
-      livelink: "https://spectacular-klepon-4f3a2c.netlify.app/",
-      github: "https://github.com/pranshushuklagithub/travelious-clone",
+      livelink: "https://travellious-clone-frontend.vercel.app/",
+      github: "https://github.com/khushi627jain/travellious-clone-frontend",
       techStack: [ {id:1,skill:'HTML5',img:<AiFillHtml5 size='20px' color='rgb(233,89,35)' />},
       {id:2,skill:'CSS3',img:<SiCss3 size='20px' color='blue' />},
       {id:3,skill:'JavaScript',img:<SiJavascript size='20px' color='orange' />},
       {id:4,skill:'React JS',img:<SiReact size='20px' color='skyblue' />},
-      {id:5,skill:'Chakra UI',img:<SiChakraui size='20px' color='rgb(78,201,196)' />}, 
+     
+      {id:5,skill:'Node JS',img:<FaNodeJs size='20px' color='rgb(78,201,196)' />}, 
+      {id:6,skill:'Mongo DB',img:<DiMongodb size='20px' color='rgb(78,201,196)' />}, 
     ],
       description:
         "Travellious is a premier travel website that offers a wide array of tour packages to destinations all over the world.",

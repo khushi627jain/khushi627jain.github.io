@@ -25,7 +25,7 @@ function App() {
     <About/>
  <TechStackSkills/>
    <Projects/> 
-   <GithubCalendar name="khushi627jain"/>
+   <GithubCalendar />
    <Statistics/>
    <Contact/>
     </div>
