@@ -26,9 +26,9 @@ export function AboutAndProfile(){
         <a href="mailto:deepshikha2764@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="https://www.instagram.com/khushi_jain627/"><i className="bx bxl-instagram-alt"></i></a>
         <a  href="https://www.linkedin.com/in/deepshikha-jain-936640256/"><i className="bx bxl-linkedin"></i></a>
-    </div>
+    </div>      
     {/* //resume */}
-    <a href="./Deepshikha_jain_Resume.pdf" download id="resume-link-2">
+    <a href="./Deepshikha_jain_Resume.pdf" target="_blank" download id="resume-link-2">
     <Button 
     mt="-4%"  _hover={{color:"#fa4a6f",bg:"white",border:"3px solid #fa4a6f"}} 
      bg="#fa4a6f" w="25%" h="3rem" fontSize={"xl"} fontFamily={"heading"}

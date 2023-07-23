@@ -38,8 +38,8 @@ export function Contact(){
 <Text data-aos="fade-left" data-aos-duration="1000" fontSize={["md","md","xl","xl","xl"]}>khushi627jain</Text>
     </div>
     <div className="contact-form-inner">
-    <a id="contact-linkedin" href="https://www.linkedin.com/in/deepshikha-jain-936640256/"><i className="bx bxl-linkedin"></i></a>
-<Text data-aos="fade-right" data-aos-duration="1000" fontSize={["md","md","xl","xl","xl"]}>Deepshikha jain</Text>
+    <a id="contact-linkedin" href="https://www.linkedin.com/in/deepshikha-jain-936640256/"><i class="bx bxl-linkedin"></i></a>
+<Text  fontSize={["md","md","xl","xl","xl"]}>Deepshikha jain</Text>
     </div>
    
 
