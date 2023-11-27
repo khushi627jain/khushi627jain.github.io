@@ -14,26 +14,26 @@
 
 
 /* ///////////////////////////////////////////// */
-section{
-    /* min-height: 100vh; */
+/* section{
+   
     padding: 10rem 7% 2rem;
-}
-.home{
+} */
+ /* .home{
 display: flex;
 align-items: center;
-}
+} */
 .home-content{
     max-width:44rem ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
-}
+} 
 
  .social-media a{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
         background: transparent;
         border: .2rem solid var(--main-color);
         border-radius: 50%;
@@ -47,20 +47,18 @@ align-items: center;
     background: var(--main-color);
     color: var(--white-color);
 }
-.home-img-1{
+/* .home-img-1{
     position: relative;
-    /* width: 450px;
-    height: 500px;   */
     margin: auto;
     justify-content: center;
-  }
+  } */
 
   .home-img-1 img {
-    margin: auto;
+    /* margin: auto;
     justify-content: center;
     border-radius: 50%;
     width: 450px;
-    height: 500px;
+    height: 500px; */
     animation: moveImage 2s infinite alternate;
   }
 
@@ -115,6 +113,7 @@ height: 230px;
     font-family: cursive;
     font-weight: 600;
     color: #2d2c2c;
+    margin: auto;
 }
 
 .contact-form-inner{
@@ -165,10 +164,10 @@ height: 230px;
     color:#fa4a6f
   }
   .skills-card {
-    font-size: 1.5em ;
+    font-size: 2rem ;
     color: white ;
     margin: 15px ;
-    padding: 5px ;
+    padding: 10px ;
     opacity: 0.93 ;
     border: 1.7px solid #fa4a6f ;
     vertical-align: middle ;
@@ -194,9 +193,7 @@ height: 230px;
 
 /* .................................,,,,,,,,,,,,,,,,,,,,,,,,,,, */
  @media (max-width:1200px){
-    /* html{
-        font-size:50%;
-    } */
+   
     #github-stats-card{
       height: 200px;
       }
@@ -206,10 +203,7 @@ height: 230px;
       #github-top-langs{
         width: 500px;
       }
-      .home-img-1 img{
-        width: 1500px;
-        height: 400px;
-    }
+    
 
 }
 @media (max-width:1024px){
@@ -238,36 +232,35 @@ height: 230px;
     .tagName{
         font-size: 40px;
     }
-    .home-img-1 img{
-        width: 1300px;
-        height: 350px;
-    }
+   
     #github-stats-card{
-      height: 160px;
+      height: 300px;
       }
       #github-streak-stats{
-        height: 160px;
+        height: 300px;
       }
       #github-top-langs{
-        width: 450px;
+        width: 550px;
+       
       }
+      .social-media a{
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+  }
+  .stat-3{
+    display: grid;
+   }
 }
 @media (max-width:768px){
-    .home{
-        display: grid;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-      
-        gap:10px
-    }
+    
     .home-content{
         margin: auto;
         justify-content: center;
         align-items: center;
         text-align: center;
        
-    }
+    } 
     .home-content p{
       margin: 10px auto;
     }
@@ -282,15 +275,7 @@ height: 230px;
       border: 2.2px solid #0A81AB ;
     }
   
-   .home-img-1 img {
    
-    margin: auto;
-    justify-content: center;
-    border-radius: 50%;
-    width: 300px;
-    height: 350px;
-    animation: moveImage 0s infinite alternate;
-  }
     .tagName{
         font-size: 30px;
     }
@@ -298,25 +283,23 @@ height: 230px;
     display: grid;
    }
    #github-stats-card{
-    height: 200px;
+    height: 350px;
     }
     #github-streak-stats{
-      height: 200px;
+      height: 350px;
     }
     #github-top-langs{
       width: 450px;
     }
+    .social-media a{
+      width: 7rem;
+      height: 7rem;
+      font-size: 5rem;
+}
 }
 
 @media (max-width:520px){
-    .home,#home{
-        display: grid;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    
-        gap:10px
-    }
+   
     .home-content{
         margin: auto;
         justify-content: center;
@@ -325,20 +308,23 @@ height: 230px;
        
     }
   
-   .home-img-1 img {
-    margin: auto;
-    justify-content: center;
-    border-radius: 50%;
-    width: 300px;
-    height: 350px;
-    animation: moveImage 0s infinite alternate;
-  }
+  
     .tagName{
         font-size: 30px;
     }
     .social-media a{
-      width: 3rem;
-      height: 3rem;
+      width: 7rem;
+      height: 7rem;
+      font-size: 4rem;
 }
+.stat-3{
+  display: grid;
+ }
+ #github-stats-card{
+  height: 350px;width: 100%;
+  }
+  #github-streak-stats{
+    height: 350px;
+  }
 }
 

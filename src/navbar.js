@@ -41,6 +41,13 @@ const Navbar = () => {
     "projects","statistics","contact"
   ]
   
+  const onClickhandler = () => {
+    return window.open(
+      "https://drive.google.com/file/d/1jEsvQa8I4JQwZzc7XmSjWZ94s6Umq-W7/view?usp=drive_link",
+      "_blank"
+    );
+  };
+
   return (
     <Container
     id="nav-menu"
@@ -49,8 +56,7 @@ const Navbar = () => {
       pos="fixed"
       zIndex="2"
       padding="20px"
-      maxW="100%"
-      
+       maxW="100%"
       display="flex"
       justifyContent="space-between"
       bg="gray.800"
@@ -105,23 +111,23 @@ const Navbar = () => {
       </Box>  
         <Link class="nav-link resume">
         <Button
-          display={["none", "none", "none", "flex", "flex"]}
-          borderRadius=".8rem"
-          id="resume-button-1"
-          size={["md", "md"]}
-          margin="auto"
-          as={Link}
-          target="_blank"
-          bg="white"
-          color="#fa4a6f"
-          _hover={{ bg: "#fa4a6f", color: "black" }}
-          href="./Deepshikha_jain_Resume.pdf"
-          download={true}
-        
-        >
-          <DownloadIcon id="resume-link-1" marginRight="5px" />
-          Resume
-        </Button>
+  display={["none", "none", "none", "flex", "flex"]}
+  borderRadius=".8rem"
+  id="resume-button-1"
+  size={["md", "md"]}
+  margin="auto"
+  as={Link}
+  target="_blank"
+  bg="white"
+  color="#fa4a6f"
+  _hover={{ bg: "#fa4a6f", color: "black" }}
+  //  href="/Deepshikha_jain_Resume.pdf"
+  download={true} // Add the download attribute to trigger the download
+  onClick={onClickhandler}
+>
+  <DownloadIcon id="resume-link-1" marginRight="5px" />
+  Resume
+</Button>
       </Link>
       <Box 
         paddingRight={"10px"}
@@ -184,8 +190,9 @@ const Navbar = () => {
             p="15px"
             border="1px"
             borderRadius="15px"
-            href="./Deepshikha_jain_Resume.pdf"
+            href="/Deepshikha_jain_Resume.pdf"
             download={true} 
+            onClick={onClickhandler}
           >
             <DownloadIcon marginRight="5px" 
              />

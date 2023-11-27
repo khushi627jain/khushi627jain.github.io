@@ -14,6 +14,8 @@ import Navbar from './navbar';
 import About from './about';
 import './style.css'; 
 import TechStackSkills from './TechSkillsStack';
+import Calendar from './GitHubCalendar';
+
 
 
 
@@ -25,7 +27,7 @@ function App() {
     <About/>
  <TechStackSkills/>
    <Projects/> 
-   <GithubCalendar />
+<Calendar/>
    <Statistics/>
    <Contact/>
     </div>
