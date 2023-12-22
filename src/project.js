@@ -15,7 +15,7 @@ const Projects = () => {
     {
       id: 4,
       livelink: "https://meghkhushcreation.netlify.app/",
-      github: "https://github.com/khushi627jain/travellious-clone",
+      github: "https://github.com/khushi627jain/MeghKhush_Creation_frontend",
       techStack: [{ id: 1, skill: 'HTML5', img: <AiFillHtml5 size='20px' color='rgb(233,89,35)' /> },
       { id: 2, skill: 'CSS3', img: <SiCss3 size='20px' color='blue' /> },
       { id: 3, skill: 'JavaScript', img: <SiJavascript size='20px' color='orange' /> },
