@@ -14,11 +14,8 @@ import Navbar from './navbar';
 import About from './about';
 import './style.css'; 
 import TechStackSkills from './TechSkillsStack';
-<<<<<<< HEAD
-=======
 import Calendar from './GitHubCalendar';
 
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 
 
 
@@ -30,11 +27,7 @@ function App() {
     <About/>
  <TechStackSkills/>
    <Projects/> 
-<<<<<<< HEAD
-   <GithubCalendar />
-=======
 <Calendar/>
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
    <Statistics/>
    <Contact/>
     </div>

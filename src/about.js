@@ -1,30 +1,13 @@
-<<<<<<< HEAD
-import { Box, Image, Text } from "@chakra-ui/react";
-
-export default function About(){
-    return(
-        <Box id="about" className="about section">
-=======
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 
 export default function About(){
     return(
         <Center>
             <Box  m="auto" alignItems={"center"} justifyContent={"center"} id="about" className="about section">
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
               <h1 data-aos="fade-down" data-aos-duration="1000" className="tagName">
               {/* Discovering Me/ */}
               About me
               </h1>
-<<<<<<< HEAD
-              <Box data-aos="fade-right" data-aos-duration="1000" display={["grid","grid","grid","flex"]} gap="20px" w="90%" m="auto" alignItems={"center"} justifyContent={"center"} >
-                <Box>
-                    <Image w={["5000px"]} borderRadius={"10px"} src="https://camo.githubusercontent.com/3997f3b27a68e19c31e2d1c378d77303735faa42e7d18a8018f7510d66aaa83e/68747470733a2f2f7777772e77696e677374656368736f6c7574696f6e732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f30332f66756c6c2d737461636b2d646576656c6f706d656e742e676966"/>
-                </Box>
-                <Box data-aos="fade-left" data-aos-duration="1000">
-                    <Text fontSize={["25px"]} color={"#333f48"} mb="10px" >Coding Is My Passion</Text>
-               <Text w={["95%"]} m="auto" textAlign={"left"} fontSize={["18px"]} id="user-detail-intro">
-=======
               <Box data-aos="fade-right" data-aos-duration="1000" 
               display={["grid","grid","grid","grid","flex"]} gap="20px" w="90%"
                m="auto" alignItems={"center"} justifyContent={"center"}
@@ -46,7 +29,6 @@ export default function About(){
                 fontSize={["4vw", "3.5vw", "3vw", "2.3vw", "1.5vw"]}
                
                  id="user-detail-intro">
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
                Passionate about coding, I consider it not just a profession but an integral part of who I am. 
                It is igniting a fire within me to continuously explore, create, and innovate.
                 Coding is where I find solace and excitement .
@@ -58,10 +40,7 @@ export default function About(){
                 </Box>
               </Box>
         </Box>
-<<<<<<< HEAD
-=======
         </Center>
         
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     )
 }

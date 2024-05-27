@@ -12,15 +12,9 @@ const MyProjectCard = ({
 }) => {
   return (
     <Container className="project-card" data-aos="fade-up" data-aos-duration="1000"
-<<<<<<< HEAD
-      maxW={["full", "full", "full", "full", "70%"]}
-      mt="100px"
-      display={["block", "block", "block", "flex", "flex"]}
-=======
       maxW={["full", "full", "full", "full", "90%"]}
       mt="100px"
       display={["block", "block", "block", "flex", "flex"]}  
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     >
       <Container
     
@@ -46,11 +40,7 @@ const MyProjectCard = ({
             {projectTitle}
           </Heading>
           <Box display="hidden" visibility={["hidden","hidden","hidden",,"hidden","inherit"]} > 
-<<<<<<< HEAD
-          <Divider borderColor="#fa4a6f" my={["5%","4%","4%","5%","2%"]} /></Box>
-=======
           <Divider borderColor="#fa4a6f" mt={["5%","4%","4%","5%","2%"]} /></Box>
->>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
          
 
           {" "}
