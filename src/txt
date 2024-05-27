@@ -1,0 +1,127 @@
+ <!-- {/* <div className="proffesion-container">
+    <div className="proffesion-box">
+    <div className="proffesion" style={{ '--i':0 }}>
+  <i className="bx bx-camera"></i>
+  <h3>Backended Developer</h3>
+</div>
+<div className="proffesion" style={{ '--i': 1 }}>
+  <i className="bx bx-camera"></i>
+  <h3>Frontend Developer</h3>
+</div>
+<div className="proffesion" style={{ '--i': 2 }}>
+  <i className="bx bx-camera"></i>
+  <h3>Full-Stack Web Developer</h3>
+</div>
+<div className="proffesion" style={{ '--i': 3 }}>
+  <i className="bx bx-camera"></i>
+  <h3>Deepshikha</h3>
+</div>
+
+        <div className="circle"></div>
+
+    </div>
+     <div  className="overlay"></div>  
+    <div className="home-img">
+    <img src="https://i.imgur.com/nmWp3fH.jpg" />
+</div>
+  </div> */} -->
+  <!-- .home .proffesion-container .overlay{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid var(--main-color);
+    border-bottom: 384px solid var(--main-color);
+    border-right: 384px solid var(--main-color);
+    border-left: 384px solid transparent;
+}
+.home .proffesion-container{
+    position: absolute;
+    top:8%;
+    /* top:50%; */
+    right:0;
+    transform: translateY(-50%);
+    width: 768px;
+    height: 768px;
+    /* background:var(--main-color); */
+    /* background: red; */
+    overflow: hidden;
+    pointer-events: none;
+}
+.home .proffesion-container .proffesion-box{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 768px;
+    height: 768px;
+   
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation: professionRotate 13s ease-out infinite; 
+}
+@keyframes professionRotate{
+    0%,20%{
+        transform: rotate(0deg);
+    }
+  
+        25%,45%{
+        transform: rotate(-90deg);
+    }
+    50%,70%{
+        transform: rotate(-180deg);
+    }
+    75%,95%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.home .proffesion-box .proffesion{
+    position: absolute;
+    left:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-color);
+    transform: rotate(calc(90deg*var(--i)));
+    transform-origin: 384px;
+    background: var(--bg-color);
+   
+  
+    padding: 13px 0;
+    
+}
+.proffesion:nth-child(1) i{
+    margin-right: 15px;
+}
+.proffesion:nth-child(2) {
+    padding-bottom: 20px;
+}
+/*   */
+.proffesion:nth-child(4) {
+    padding-bottom: 20px;
+}  -->
+<!-- .home .proffesion i{
+    font-size: 1.8rem;
+}
+.home .proffesion h3{
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+.home .proffesion-box .circle{
+    width: 560px;
+    height: 560px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.proffesion h3{
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 600;
+} -->
