@@ -43,7 +43,7 @@ const Navbar = () => {
   
   const onClickhandler = () => {
     return window.open(
-      "https://drive.google.com/file/d/1jEsvQa8I4JQwZzc7XmSjWZ94s6Umq-W7/view?usp=drive_link",
+      "https://drive.google.com/file/d/1QaG7P93sKy4_J0eELw-aGsxQVns39Gnk/view?usp=sharing",
       "_blank"
     );
   };
@@ -207,9 +207,3 @@ const Navbar = () => {
 export default Navbar;
 
 // remove all commentys
-
-
-
-
-
-
