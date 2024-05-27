@@ -41,6 +41,16 @@ const Navbar = () => {
     "projects","statistics","contact"
   ]
   
+<<<<<<< HEAD
+=======
+  const onClickhandler = () => {
+    return window.open(
+      "https://drive.google.com/file/d/1jEsvQa8I4JQwZzc7XmSjWZ94s6Umq-W7/view?usp=drive_link",
+      "_blank"
+    );
+  };
+
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
   return (
     <Container
     id="nav-menu"
@@ -49,8 +59,12 @@ const Navbar = () => {
       pos="fixed"
       zIndex="2"
       padding="20px"
+<<<<<<< HEAD
       maxW="100%"
       
+=======
+       maxW="100%"
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
       display="flex"
       justifyContent="space-between"
       bg="gray.800"
@@ -105,6 +119,7 @@ const Navbar = () => {
       </Box>  
         <Link class="nav-link resume">
         <Button
+<<<<<<< HEAD
           display={["none", "none", "none", "flex", "flex"]}
           borderRadius=".8rem"
           id="resume-button-1"
@@ -122,6 +137,25 @@ const Navbar = () => {
           <DownloadIcon id="resume-link-1" marginRight="5px" />
           Resume
         </Button>
+=======
+  display={["none", "none", "none", "flex", "flex"]}
+  borderRadius=".8rem"
+  id="resume-button-1"
+  size={["md", "md"]}
+  margin="auto"
+  as={Link}
+  target="_blank"
+  bg="white"
+  color="#fa4a6f"
+  _hover={{ bg: "#fa4a6f", color: "black" }}
+  //  href="/Deepshikha_jain_Resume.pdf"
+  download={true} // Add the download attribute to trigger the download
+  onClick={onClickhandler}
+>
+  <DownloadIcon id="resume-link-1" marginRight="5px" />
+  Resume
+</Button>
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
       </Link>
       <Box 
         paddingRight={"10px"}
@@ -184,8 +218,14 @@ const Navbar = () => {
             p="15px"
             border="1px"
             borderRadius="15px"
+<<<<<<< HEAD
             href="./Deepshikha_jain_Resume.pdf"
             download={true} 
+=======
+            href="/Deepshikha_jain_Resume.pdf"
+            download={true} 
+            onClick={onClickhandler}
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
           >
             <DownloadIcon marginRight="5px" 
              />

@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import GitHubCalendar from 'github-calendar';
+=======
+import { Box, Center } from '@chakra-ui/react';
+import React, { useEffect } from 'react';
+
+import GitHubCalendar from 'react-github-calendar';
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 
 
 
 
+<<<<<<< HEAD
 
 const GithubCalendar = () => {
   useEffect(() => {
@@ -29,6 +37,30 @@ const GithubCalendar = () => {
 };
 
 export default GithubCalendar;
+=======
+const Calendar = () => {
+ 
+  return (
+    <>
+       <Box id="statistics">
+       <h1  data-aos="fade-down" data-aos-duration="1000" className="tagName">
+              {/* Discovering Me/ */}
+            Statistics
+              </h1>
+              <Box mt="20px"></Box>
+              <Center>
+              <GitHubCalendar m="auto" username= "Khushi627jain" responsive={true} />
+              </Center>
+             
+       </Box>
+    </>
+    
+   
+  );
+};
+
+export default Calendar;
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 
 
 
@@ -44,6 +76,7 @@ export default GithubCalendar;
 
 
 
+<<<<<<< HEAD
 
 // import React, { Component, createRef } from 'react';
 // import GitHubCalendar from 'github-calendar';
@@ -93,3 +126,5 @@ export default GithubCalendar;
 //     );
 //   }
 // }
+=======
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351

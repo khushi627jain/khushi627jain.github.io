@@ -14,6 +14,7 @@
 
 
 /* ///////////////////////////////////////////// */
+<<<<<<< HEAD
 section{
     /* min-height: 100vh; */
     padding: 10rem 7% 2rem;
@@ -22,18 +23,37 @@ section{
 display: flex;
 align-items: center;
 }
+=======
+/* section{
+   
+    padding: 10rem 7% 2rem;
+} */
+ /* .home{
+display: flex;
+align-items: center;
+} */
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 .home-content{
     max-width:44rem ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 
  .social-media a{
         display: inline-flex;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
         width: 4rem;
         height: 4rem;
+=======
+        width: 5rem;
+        height: 5rem;
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
         background: transparent;
         border: .2rem solid var(--main-color);
         border-radius: 50%;
@@ -47,6 +67,7 @@ align-items: center;
     background: var(--main-color);
     color: var(--white-color);
 }
+<<<<<<< HEAD
 .home-img-1{
     position: relative;
     /* width: 450px;
@@ -61,6 +82,20 @@ align-items: center;
     border-radius: 50%;
     width: 450px;
     height: 500px;
+=======
+/* .home-img-1{
+    position: relative;
+    margin: auto;
+    justify-content: center;
+  } */
+
+  .home-img-1 img {
+    /* margin: auto;
+    justify-content: center;
+    border-radius: 50%;
+    width: 450px;
+    height: 500px; */
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     animation: moveImage 2s infinite alternate;
   }
 
@@ -115,6 +150,10 @@ height: 230px;
     font-family: cursive;
     font-weight: 600;
     color: #2d2c2c;
+<<<<<<< HEAD
+=======
+    margin: auto;
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 }
 
 .contact-form-inner{
@@ -165,10 +204,17 @@ height: 230px;
     color:#fa4a6f
   }
   .skills-card {
+<<<<<<< HEAD
     font-size: 1.5em ;
     color: white ;
     margin: 15px ;
     padding: 5px ;
+=======
+    font-size: 2rem ;
+    color: white ;
+    margin: 15px ;
+    padding: 10px ;
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     opacity: 0.93 ;
     border: 1.7px solid #fa4a6f ;
     vertical-align: middle ;
@@ -194,9 +240,13 @@ height: 230px;
 
 /* .................................,,,,,,,,,,,,,,,,,,,,,,,,,,, */
  @media (max-width:1200px){
+<<<<<<< HEAD
     /* html{
         font-size:50%;
     } */
+=======
+   
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     #github-stats-card{
       height: 200px;
       }
@@ -206,10 +256,14 @@ height: 230px;
       #github-top-langs{
         width: 500px;
       }
+<<<<<<< HEAD
       .home-img-1 img{
         width: 1500px;
         height: 400px;
     }
+=======
+    
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 
 }
 @media (max-width:1024px){
@@ -238,6 +292,7 @@ height: 230px;
     .tagName{
         font-size: 40px;
     }
+<<<<<<< HEAD
     .home-img-1 img{
         width: 1300px;
         height: 350px;
@@ -261,13 +316,41 @@ height: 230px;
       
         gap:10px
     }
+=======
+   
+    #github-stats-card{
+      height: 300px;
+      }
+      #github-streak-stats{
+        height: 300px;
+      }
+      #github-top-langs{
+        width: 550px;
+       
+      }
+      .social-media a{
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+  }
+  .stat-3{
+    display: grid;
+   }
+}
+@media (max-width:768px){
+    
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     .home-content{
         margin: auto;
         justify-content: center;
         align-items: center;
         text-align: center;
        
+<<<<<<< HEAD
     }
+=======
+    } 
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     .home-content p{
       margin: 10px auto;
     }
@@ -282,6 +365,7 @@ height: 230px;
       border: 2.2px solid #0A81AB ;
     }
   
+<<<<<<< HEAD
    .home-img-1 img {
    
     margin: auto;
@@ -291,6 +375,9 @@ height: 230px;
     height: 350px;
     animation: moveImage 0s infinite alternate;
   }
+=======
+   
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     .tagName{
         font-size: 30px;
     }
@@ -298,14 +385,22 @@ height: 230px;
     display: grid;
    }
    #github-stats-card{
+<<<<<<< HEAD
     height: 200px;
     }
     #github-streak-stats{
       height: 200px;
+=======
+    height: 350px;
+    }
+    #github-streak-stats{
+      height: 350px;
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     }
     #github-top-langs{
       width: 450px;
     }
+<<<<<<< HEAD
 }
 
 @media (max-width:520px){
@@ -317,6 +412,17 @@ height: 230px;
     
         gap:10px
     }
+=======
+    .social-media a{
+      width: 7rem;
+      height: 7rem;
+      font-size: 5rem;
+}
+}
+
+@media (max-width:520px){
+   
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     .home-content{
         margin: auto;
         justify-content: center;
@@ -325,6 +431,7 @@ height: 230px;
        
     }
   
+<<<<<<< HEAD
    .home-img-1 img {
     margin: auto;
     justify-content: center;
@@ -333,12 +440,31 @@ height: 230px;
     height: 350px;
     animation: moveImage 0s infinite alternate;
   }
+=======
+  
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
     .tagName{
         font-size: 30px;
     }
     .social-media a{
+<<<<<<< HEAD
       width: 3rem;
       height: 3rem;
 }
+=======
+      width: 7rem;
+      height: 7rem;
+      font-size: 4rem;
+}
+.stat-3{
+  display: grid;
+ }
+ #github-stats-card{
+  height: 350px;width: 100%;
+  }
+  #github-streak-stats{
+    height: 350px;
+  }
+>>>>>>> 176c626ac5fc63c21c27f8a770851847a590e351
 }
 
