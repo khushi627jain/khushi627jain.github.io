@@ -6,7 +6,7 @@ export default function About(){
             <Box   m="auto" alignItems={"center"} justifyContent={"center"} id="about" className="about section">
               <h1 data-aos="fade-down" data-aos-duration="1000" className="tagName">
               {/* Discovemnnnring Me/ */}
-              About mem
+              About me
               </h1>
               <Box data-aos="fade-right" data-aos-duration="1000" 
               display={["grid","grid","grid","grid","flex"]} gap="20px" w="90%"

@@ -81,23 +81,19 @@ const Projects = () => {
       gif: "",
       projectTitle: "QuikrBazaar",
     },
-    // {
-    //   id: 4,
-    //   livelink: "https://bright-taffy-2146bc.netlify.app/home",
-    //   github: "https://github.com/khushi627jain/Quikr-Bazar",
-    //   techStack: [  {id:1,skill:'HTML',img:<AiFillHtml5 size='20px' color='#e2660f' />},
-    //   {id:2,skill:'Javascript',img:<SiJavascript size='20px' color='orange' />},
-    //   {id:3,skill:'Css',img:<SiCss3 size='20px' color='rgb(78,201,196)' />},
-
-    // ],
-    //   description:
-    //     "QuikrBazaar is a popular online platform for buying and selling a wide range of products and services.",
-    //   features: [],
-    //   images: quikr,
-    //   gif: "",
-    //   projectTitle: "QuikrBazaar",
-    // },
-
+    {
+      id: 5,
+      livelink: "https://colorchangingwebsiteassignment.netlify.app/",
+      github: "https://github.com/khushi627jain/Tech-Pro-School-Assignment",
+      techStack: [{ id: 1, skill: 'HTML5', img: <AiFillHtml5 size='20px' color='rgb(233,89,35)' /> },
+      { id: 2, skill: 'CSS3', img: <SiCss3 size='20px' color='blue' /> },
+      { id: 4, skill: 'React JS', img: <SiReact size='20px' color='skyblue' /> }
+      ],
+   
+      images: quikr,
+      gif: "",
+      projectTitle: "Color Changing Website",
+    },
   ];
 
   return (
