@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@chakra-ui/react";
-import { SiChakraui, SiReact, SiJavascript, SiCss3, } from "react-icons/si";
+import { SiChakraui,SiReact, SiJavascript, SiCss3, } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import MyProjectCard from "./MyProjectCard";
 import quikr from "./quikrbazaar.png";
@@ -9,6 +9,7 @@ import travel from "./travellious.png"
 import { DiMongodb } from "react-icons/di"
 import { FaNodeJs } from "react-icons/fa"
 import meghkhush from "./meghkhush.png"
+import colorChanging from './ColorChangingWebsite.png'
 
 const Projects = () => {
   const projects = [
@@ -89,8 +90,9 @@ const Projects = () => {
       { id: 2, skill: 'CSS3', img: <SiCss3 size='20px' color='blue' /> },
       { id: 4, skill: 'React JS', img: <SiReact size='20px' color='skyblue' /> }
       ],
-   
-      images: quikr,
+      description:
+      "This website includes the following features like change theme(Black & White) and main colors",
+      images: colorChanging,
       gif: "",
       projectTitle: "Color Changing Website",
     },
