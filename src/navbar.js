@@ -43,7 +43,7 @@ const Navbar = () => {
   
   const onClickhandler = () => {
     return window.open(
-      "https://drive.google.com/file/d/1QaG7P93sKy4_J0eELw-aGsxQVns39Gnk/view?usp=sharing",
+      "https://drive.google.com/file/d/1_48zdUu523ufjxbg5kVTqXbCvRVFo85k/view?usp=sharing",
       "_blank"
     );
   };

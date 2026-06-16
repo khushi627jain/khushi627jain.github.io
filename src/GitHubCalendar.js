@@ -1,7 +1,7 @@
 import { Box, Center } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
 
-import GitHubCalendar from 'react-github-calendar';
+import { GitHubCalendar } from "react-github-calendar";
 
 
 

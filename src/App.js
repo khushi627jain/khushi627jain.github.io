@@ -24,11 +24,11 @@ function App() {
     <div className="App" >
   <Navbar/>
     <AboutAndProfile/>
-    <About/>
+
  <TechStackSkills/>
    <Projects/> 
-<Calendar/>
-   <Statistics/>
+{/* <Calendar/>
+   <Statistics/> */}
    <Contact/>
     </div>
   );

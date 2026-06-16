@@ -1,104 +1,162 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-// import { CgCPlusPlus } from "react-icons/cg";
+import { Row, Col } from "react-bootstrap";
+
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiGithubBadge,
-  DiBootstrap,
-  DiHtml5,
-  
-} from "react-icons/di";
-import {SiRedux,SiExpress,SiTailwindcss,
-  SiChakraui,SiCss3,  } from "react-icons/si";
-  import {FaJava} from "react-icons/fa"
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiRedux,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiRedis,
+  SiTailwindcss,
+  SiChakraui,
+  SiCloudflare,
+  SiGithub,
+  SiPostman,
+  SiJira,
+  SiSentry,
+  SiVercel,
+  SiNetlify,
+  SiRazorpay
+} from "react-icons/si";
+
+import { DiJavascript1, DiHtml5, DiCss3 } from "react-icons/di";
+
+import { FaJava, FaPython, FaGitAlt } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+
+const skills = [
+  // Most Valuable / Most Searched
+
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "Next.js", icon: <SiNextdotjs /> },
+  { name: "React.js", icon: <SiReact /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "AWS", icon: <FaAws /> },
+  { name: "React Native", icon: "📱" },
+
+  // Backend & Architecture
+
+  { name: "Express.js", icon: <SiExpress /> },
+  { name: "REST APIs", icon: "⚡" },
+  { name: "Redis", icon: <SiRedis /> },
+  { name: "Queue Systems", icon: "🔄" },
+  { name: "Cron Jobs", icon: "⏰" },
+  { name: "Redis Redlock", icon: "🔒" },
+
+  // Databases
+
+  { name: "MySQL", icon: <SiMysql /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+
+  // Frontend Ecosystem
+
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "JavaScript", icon: <DiJavascript1 /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "HTML5", icon: <DiHtml5 /> },
+  { name: "CSS3", icon: <DiCss3 /> },
+  { name: "Chakra UI", icon: <SiChakraui /> },
+
+  // Cloud & Monitoring
+
+  { name: "Cloudflare", icon: <SiCloudflare /> },
+  { name: "Sentry", icon: <SiSentry /> },
+
+  // Languages
+
+  { name: "Python", icon: <FaPython /> },
+  { name: "Java", icon: <FaJava /> },
+
+  // Payments & Business Integrations
+
+  { name: "Razorpay", icon: <SiRazorpay /> },
+  { name: "Cashfree", icon: "💳" },
+  { name: "Paytm", icon: "💰" },
+  { name: "ONDC", icon: "🌐" },
+  { name: "Digio KYC", icon: "🪪" },
+
+  // Developer Tools
+
+  { name: "Git", icon: <FaGitAlt /> },
+  { name: "GitHub", icon: <SiGithub /> },
+  { name: "Postman", icon: <SiPostman /> },
+  { name: "Jira", icon: <SiJira /> },
+  { name: "Vercel", icon: <SiVercel /> },
+  { name: "Netlify", icon: <SiNetlify /> }
+];
 
 function Techstack() {
-  return (<div
-   id="Skills" 
-  style={{margin:"auto",justifyContent:"center",alignItems:"center"}}
+  return (
+    <div
+      id="Skills"
+      style={{
+        margin: "auto",
+        justifyContent: "center",
+        alignItems: "center"
+      }}
     >
-    <br/>
-    <br/>
-    <br/>
-    <h1 data-aos="fade-down" data-aos-duration="5000" className="tagName">Skills</h1>
-    <Row data-aos="fade-up" data-aos-duration="5000" style={{ justifyContent: "center", paddingBottom: "50px" }}>
-     
-    <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://reactjs.org/" target={"_blank"}>  
-        <DiReact className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}} />
-        <p className="skills-card-name" >React</p>
-      </a>
-      </Col>
+      <br />
+      <br />
+      <br />
 
-    <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://redux.js.org/" target={"_blank"}> 
-        <SiRedux className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}}  />
-        <p className="skills-card-name">Redux</p>
-      </a>
-      </Col>
+      <h1
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        className="tagName"
+        style={{
+          marginBottom: "20px"
+        }}
+      >
+        Skills
+      </h1>
 
-    <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://expressjs.com/" target={"_blank"}>
-        <SiExpress className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}}/>
-        <p className="skills-card-name">Express</p>
-      </a>
-      </Col>
+      <Row
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        style={{
+          justifyContent: "center",
+          paddingBottom: "30px"
+        }}
+      >
+        {skills.map((skill, index) => (
+          <Col
+            key={index}
+            xs={4}
+            sm={3}
+            md={2}
+            lg={2}
+            className="skills-card"
+            data-aos="zoom-in"
+            data-aos-duration="1200"
+          >
+            <div
+              style={{
+                textAlign: "center",
+                cursor: "pointer"
+              }}
+            >
+              <div
+                className="skills-card-img"
+                style={{
+                  fontSize: "50px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginBottom: "6px"
+                }}
+              >
+                {skill.icon}
+              </div>
 
-    <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://www.mongodb.com/" target={"_blank"}> 
-        <DiMongodb className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}}/>
-        <p className="skills-card-name">Mongodb</p>
-      </a>
-      </Col>
-      
-    <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://nodejs.org/en/" target={"_blank"}>
-        <DiNodejs className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}} />
-        <p className="skills-card-name">Nodejs</p>
-      </a>
-      </Col>
-
-    <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" target={"_blank"}>
-        <DiJavascript1 className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}}/>
-        <p className="skills-card-name">Javascript</p>
-      </a>
-      </Col>
-      <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://reactjs.org/" target={"_blank"}>  
-        <SiChakraui className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}} />
-        <p className="skills-card-name">Chakra UI</p>
-      </a>
-      </Col>
-
-      <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://reactjs.org/" target={"_blank"}>  
-        <SiCss3 className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}} />
-        <p className="skills-card-name">CSS</p>
-      </a>
-      </Col>
-      <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-      <a href = "https://reactjs.org/" target={"_blank"}>  
-        <FaJava className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}} />
-        <p className="skills-card-name">JAVA</p>
-      </a>
-      </Col>
-  
-      
-      
-      <Col xs={4} md={2} className="skills-card" data-aos="zoom-in" data-aos-duration="5000">
-       <a href = "https://developer.mozilla.org/en-US/docs/Web/HTML" target={"_blank"}>
-        <DiHtml5 className="skills-card-img" style={{margin:"auto",justifyContent:"center",alignItems:"center",fontSize:"50px"}}/>
-        <p className="skills-card-name">Html5</p>
-        </a>
-      </Col>
-      
-     
-     
-    </Row>
+              <p className="skills-card-name">{skill.name}</p>
+            </div>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 }

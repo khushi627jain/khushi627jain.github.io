@@ -1,51 +1,48 @@
-
 @import "~github-calendar/dist/github-calendar-responsive.css";
-*{
-    font-family: cursive;
+* {
+  font-family: cursive;
 }
-:root{
-    --bg-color:#fdfdfd;
-    --text-color:#333;
-    --main-color:
-    #fa4a6f;
-    --white-color:#fdfdfd;
-    --shadow-color:rgba(0,0,0,.2)
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #333;
+  --main-color: #fa4a6f;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
-
 
 /* ///////////////////////////////////////////// */
 /* section{
    
     padding: 10rem 7% 2rem;
 } */
- /* .home{
+/* .home{
 display: flex;
 align-items: center;
 } */
-.home-content{
-    max-width:44rem ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-} 
-
- .social-media a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 5rem;
-        height: 5rem;
-        background: transparent;
-        border: .2rem solid var(--main-color);
-        border-radius: 50%;
-        box-shadow: 0 .2rem .5rem var(--shadow-color);
-        font-size: 2rem;
-        color: var(--main-color);
-        margin: 2.5rem 1.5rem 3rem 0;
-        transition: 0.5 ease;
+.home-content {
+  max-width: 44rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
 }
-.social-media a:hover{
-    background: var(--main-color);
-    color: var(--white-color);
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 2.5rem 1.5rem 3rem 0;
+  transition: 0.5 ease;
+}
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
 }
 /* .home-img-1{
     position: relative;
@@ -53,277 +50,283 @@ align-items: center;
     justify-content: center;
   } */
 
-  .home-img-1 img {
-    /* margin: auto;
+.home-img-1 img {
+  /* margin: auto;
     justify-content: center;
     border-radius: 50%;
     width: 450px;
     height: 500px; */
-    animation: moveImage 2s infinite alternate;
-  }
+  animation: moveImage 2s infinite alternate;
+}
 
-  
-  @keyframes moveImage {
-        0% {
-          transform: translateX(0);
-        }
-        50% {
-          transform: translateX(-50px);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      
+@keyframes moveImage {
+  0% {
+    transform: translateX(0);
   }
-  
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 /* /////////////////////////////// */
 
 /* .................................,,,,,,,,,,,,,,,,,,,,,,,,,,, */
-.stat{
- margin-top: 3%;
-   
+.stat {
+  margin-top: 3%;
 }
 
-
-.stat-2,.stat-3{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.stat-2,
+.stat-3 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
-.stat-3{
-  gap:20px
+.stat-3 {
+  gap: 20px;
 }
-#github-stats-card{
-height: 230px;
-}
-#github-streak-stats{
+#github-stats-card {
   height: 230px;
 }
-#github-top-langs{
+#github-streak-stats {
+  height: 230px;
+}
+#github-top-langs {
   width: 600px;
 }
 
-
 /* .................................,,,,,,,,,,,,,,,,,,,,,,,,,,, */
-.tagName{
-    font-size: 50px;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    font-family: cursive;
-    font-weight: 600;
-    color: #2d2c2c;
-    margin: auto;
+.tagName {
+  font-size: 50px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: cursive;
+  font-weight: 600;
+  color: #2d2c2c;
+  margin: auto;
 }
 
-.contact-form-inner{
-    width: 22%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: auto;
-    padding: 5px;
+.contact-form-inner {
+  width: 22%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: auto;
+  padding: 5px;
 }
 
-.contact-form-inner p{
-    margin-left: 10px;margin-right: 10px;
+.contact-form-inner p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.contact-form-inner a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    box-shadow: 0 .2rem .5rem var(--shadow-color);
-    font-size: 2rem;
-    color: var(--main-color);
-    /* margin: 2.5rem 1.5rem 3rem 0; */
-    transition: 0.5 ease;
+.contact-form-inner a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  font-size: 2rem;
+  color: var(--main-color);
+  /* margin: 2.5rem 1.5rem 3rem 0; */
+  transition: 0.5 ease;
 }
-.contact-form-inner a:hover{
-    background: var(--main-color);
-    color: var(--white-color);
+.contact-form-inner a:hover {
+  background: var(--main-color);
+  color: var(--white-color);
 }
-.nav-link.contact{
-   
-    justify-content: left;
+.nav-link.contact {
+  justify-content: left;
 }
-#last{
-    margin-top: 20px;
-    width: 100%;
-    height: 40px;
-    background-color: #fa4a6f;
+#last {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  background-color: #fa4a6f;
 }
-#last p{
+#last p {
   padding-top: 10px;
 }
 .purple {
-    color:#fa4a6f
-  }
-  .skills-card {
-    font-size: 2rem ;
-    color: white ;
-    margin: 15px ;
-    padding: 10px ;
-    opacity: 0.93 ;
-    border: 1.7px solid #fa4a6f ;
-    vertical-align: middle ;
-    justify-content: center;
-        text-align: center ;
-    border-radius: 5px ;
-   background-color:black;
-    display: table ;
-    box-shadow: 4px 5px 4px 3px #fa4a6f ;
-    overflow: hidden ;
-    transition: all 0.4s ease 0s ;
-  }
-  
-  .skills-card a {
-    text-decoration: none;
-    color: white;
-  }
-  .about-skills {
-    position: relative ;
-    background-image: var(--main-color) ;
-    color: white ;
-  }
+  color: #fa4a6f;
+}
+
+.skills-card {
+  color: white;
+  margin: 8px;
+  padding: 12px 8px;
+  opacity: 0.95;
+
+  border: 1px solid #fa4a6f;
+  border-radius: 10px;
+
+  background-color: #111;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 120px;
+
+  box-shadow: 0 2px 10px rgba(250, 74, 111, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-px);
+  box-shadow: 0 6px 20px rgba(250, 74, 111, 0.4);
+  border-color: #ff5c7d;
+}
+
+.skills-card a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.skills-card-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.skills-card-img {
+  font-size: 38px;
+}
+.about-skills {
+  position: relative;
+  background-image: var(--main-color);
+  color: white;
+}
 
 /* .................................,,,,,,,,,,,,,,,,,,,,,,,,,,, */
- @media (max-width:1200px){
-   
-    #github-stats-card{
-      height: 200px;
-      }
-      #github-streak-stats{
-        height: 200px;
-      }
-      #github-top-langs{
-        width: 500px;
-      }
-    
-
-}
-@media (max-width:1024px){
-  
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    #github-stats-card{
-      height: 180px;
-      }
-      #github-streak-stats{
-        height: 180px;
-      }
-      #github-top-langs{
-        width: 450px;
-      }
-  
-}
-
-@media (max-width:991px){
- 
-    .home .home-content{
-        max-width:55rem ;
-    }
-  
-    .tagName{
-        font-size: 40px;
-    }
-   
-    #github-stats-card{
-      height: 300px;
-      }
-      #github-streak-stats{
-        height: 300px;
-      }
-      #github-top-langs{
-        width: 550px;
-       
-      }
-      .social-media a{
-        width: 5rem;
-        height: 5rem;
-        font-size: 3rem;
+@media (max-width: 1200px) {
+  #github-stats-card {
+    height: 200px;
   }
-  .stat-3{
-    display: grid;
-   }
+  #github-streak-stats {
+    height: 200px;
+  }
+  #github-top-langs {
+    width: 500px;
+  }
 }
-@media (max-width:768px){
-    
-    .home-content{
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-       
-    } 
-    .home-content p{
-      margin: 10px auto;
-    }
-    .skills-card {
-        margin: 10px ;
-      }
-    
-    
-    .skills-card:hover {
-      transform: scale(1.05) ;
-      overflow: hidden ;
-      border: 2.2px solid #0A81AB ;
-    }
-  
-   
-    .tagName{
-        font-size: 30px;
-    }
-   .stat-3{
+@media (max-width: 1024px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  #github-stats-card {
+    height: 180px;
+  }
+  #github-streak-stats {
+    height: 180px;
+  }
+  #github-top-langs {
+    width: 450px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home .home-content {
+    max-width: 55rem;
+  }
+
+  .tagName {
+    font-size: 40px;
+  }
+
+  #github-stats-card {
+    height: 300px;
+  }
+  #github-streak-stats {
+    height: 300px;
+  }
+  #github-top-langs {
+    width: 550px;
+  }
+  .social-media a {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+  }
+  .stat-3 {
     display: grid;
-   }
-   #github-stats-card{
+  }
+}
+@media (max-width: 768px) {
+  .home-content {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .home-content p {
+    margin: 10px auto;
+  }
+  .skills-card {
+    margin: 10px;
+  }
+
+  .skills-card:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    border: 2.2px solid #0a81ab;
+  }
+
+  .tagName {
+    font-size: 30px;
+  }
+  .stat-3 {
+    display: grid;
+  }
+  #github-stats-card {
     height: 350px;
-    }
-    #github-streak-stats{
-      height: 350px;
-    }
-    #github-top-langs{
-      width: 450px;
-    }
-    .social-media a{
-      width: 7rem;
-      height: 7rem;
-      font-size: 5rem;
-}
+  }
+  #github-streak-stats {
+    height: 350px;
+  }
+  #github-top-langs {
+    width: 450px;
+  }
+  .social-media a {
+    width: 7rem;
+    height: 7rem;
+    font-size: 5rem;
+  }
 }
 
-@media (max-width:520px){
-   
-    .home-content{
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-       
-    }
-  
-  
-    .tagName{
-        font-size: 30px;
-    }
-    .social-media a{
-      width: 7rem;
-      height: 7rem;
-      font-size: 4rem;
-}
-.stat-3{
-  display: grid;
- }
- #github-stats-card{
-  height: 350px;width: 100%;
+@media (max-width: 520px) {
+  .home-content {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  #github-streak-stats{
+
+  .tagName {
+    font-size: 30px;
+  }
+  .social-media a {
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+  }
+  .stat-3 {
+    display: grid;
+  }
+  #github-stats-card {
+    height: 350px;
+    width: 100%;
+  }
+  #github-streak-stats {
     height: 350px;
   }
 }
